@@ -1,0 +1,476 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.exflyer.oddiad"
+4    android:versionCode="100003"
+5    android:versionName="10.00.03" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:6:22-64
+12
+13    <!-- 위치권한 -->
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:9:5-81
+14-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:10:5-79
+15-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:10:22-76
+16
+17    <!-- 저장공간 권한 -->
+18    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+19    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+20
+21    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+21-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:16:5-80
+21-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:16:22-77
+22    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+22-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:17:5-81
+22-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:19:5-68
+23-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:19:22-65
+24    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+24-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:21:5-78
+24-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:21:22-75
+25    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+25-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:23:5-81
+25-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:23:22-78
+26    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+26-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:24:5-77
+26-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:24:22-74
+27    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+27-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:25:5-88
+27-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:25:22-85
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:27:5-79
+28-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:27:22-76
+29
+30    <supports-screens
+30-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:29:5-35:40
+31        android:anyDensity="true"
+31-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:30:9-34
+32        android:largeScreens="true"
+32-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:31:9-36
+33        android:normalScreens="true"
+33-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:32:9-37
+34        android:resizeable="true"
+34-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:33:9-34
+35        android:smallScreens="true"
+35-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:34:9-36
+36        android:xlargeScreens="true" />
+36-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:35:9-37
+37
+38    <uses-feature
+38-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:37:5-39:36
+39        android:name="android.hardware.touchscreen"
+39-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:38:9-52
+40        android:required="false" />
+40-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:39:9-33
+41    <uses-feature
+41-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:40:5-42:36
+42        android:name="android.hardware.faketouch"
+42-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:41:9-50
+43        android:required="false" />
+43-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:42:9-33
+44    <uses-feature
+44-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:43:5-45:36
+45        android:name="android.hardware.telephony"
+45-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:44:9-50
+46        android:required="false" />
+46-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:45:9-33
+47    <uses-feature
+47-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:46:5-48:36
+48        android:name="android.hardware.camera"
+48-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:47:9-47
+49        android:required="false" />
+49-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:48:9-33
+50    <uses-feature
+50-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:49:5-51:36
+51        android:name="android.hardware.bluetooth"
+51-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:50:9-50
+52        android:required="false" />
+52-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:51:9-33
+53    <uses-feature
+53-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:52:5-54:36
+54        android:name="android.hardware.nfc"
+54-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:53:9-44
+55        android:required="false" />
+55-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:54:9-33
+56    <uses-feature
+56-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:55:5-57:36
+57        android:name="android.hardware.gps"
+57-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:56:9-44
+58        android:required="false" />
+58-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:57:9-33
+59    <uses-feature
+59-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:58:5-60:36
+60        android:name="android.hardware.microphone"
+60-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:59:9-51
+61        android:required="false" />
+61-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:60:9-33
+62    <uses-feature
+62-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:61:5-63:36
+63        android:name="android.hardware.sensor"
+63-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:62:9-47
+64        android:required="false" />
+64-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:63:9-33
+65    <uses-feature
+65-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:64:5-66:36
+66        android:name="android.software.leanback"
+66-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:65:9-49
+67        android:required="false" />
+67-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:66:9-33
+68
+69    <!-- Required by older versions of Google Play services to create IID tokens -->
+70    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+70-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+70-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+71    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+71-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:5-110
+71-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
+72
+73    <queries>
+73-->[androidx.media:media:1.3.1] C:\Users\webzzang\.gradle\caches\transforms-3\5bf1a9a356cfa6ec0e031d8d8ccf3739\transformed\media-1.3.1\AndroidManifest.xml:24:5-28:15
+74        <intent>
+74-->[androidx.media:media:1.3.1] C:\Users\webzzang\.gradle\caches\transforms-3\5bf1a9a356cfa6ec0e031d8d8ccf3739\transformed\media-1.3.1\AndroidManifest.xml:25:9-27:18
+75            <action android:name="android.media.browse.MediaBrowserService" />
+75-->[androidx.media:media:1.3.1] C:\Users\webzzang\.gradle\caches\transforms-3\5bf1a9a356cfa6ec0e031d8d8ccf3739\transformed\media-1.3.1\AndroidManifest.xml:26:13-79
+75-->[androidx.media:media:1.3.1] C:\Users\webzzang\.gradle\caches\transforms-3\5bf1a9a356cfa6ec0e031d8d8ccf3739\transformed\media-1.3.1\AndroidManifest.xml:26:21-76
+76        </intent>
+77    </queries>
+78
+79    <application
+79-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:69:5-160:19
+80        android:name="com.exflyer.oddiad.OddiAdApplication"
+80-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:70:9-60
+81        android:allowBackup="false"
+81-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:71:9-36
+82        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+82-->[androidx.core:core:1.5.0] C:\Users\webzzang\.gradle\caches\transforms-3\81bd99dba16269ac29488b5b3bfd0a27\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+83        android:banner="@drawable/banner"
+83-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:76:9-42
+84        android:debuggable="true"
+85        android:extractNativeLibs="false"
+86        android:hardwareAccelerated="true"
+86-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:72:9-43
+87        android:icon="@mipmap/ic_launcher"
+87-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:73:9-43
+88        android:label="@string/app_name"
+88-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:74:9-41
+89        android:largeHeap="true"
+89-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:75:9-33
+90        android:requestLegacyExternalStorage="true"
+90-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:77:9-52
+91        android:supportsRtl="true"
+91-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:78:9-35
+92        android:testOnly="true"
+93        android:theme="@style/Theme.AD"
+93-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:79:9-40
+94        android:usesCleartextTraffic="true" >
+94-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:80:9-44
+95        <activity
+95-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:81:9-94:20
+96            android:name="com.exflyer.oddiad.ui.activity.splash.SplashActivity"
+96-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:82:13-80
+97            android:clearTaskOnLaunch="true"
+97-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:83:13-45
+98            android:exported="true"
+98-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:84:13-36
+99            android:launchMode="singleTask"
+99-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:85:13-44
+100            android:screenOrientation="landscape"
+100-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:86:13-50
+101            android:stateNotNeeded="true" >
+101-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:87:13-42
+102            <intent-filter>
+102-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:88:13-93:29
+103                <action android:name="android.intent.action.MAIN" />
+103-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:89:17-69
+103-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:89:25-66
+104
+105                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+105-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:91:17-86
+105-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:91:27-83
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:92:17-77
+106-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:92:27-74
+107            </intent-filter>
+108        </activity>
+109        <activity
+109-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:95:9-99:53
+110            android:name="com.exflyer.oddiad.ui.activity.main.MainActivity"
+110-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:96:13-76
+111            android:exported="false"
+111-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:97:13-37
+112            android:launchMode="singleTask"
+112-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:98:13-44
+113            android:screenOrientation="landscape" />
+113-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:99:13-50
+114
+115        <service
+115-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:102:9-108:19
+116            android:name="com.exflyer.oddiad.fcm.FirebaseInstanceIDService"
+116-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:103:13-76
+117            android:exported="true" >
+117-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:104:13-36
+118            <intent-filter>
+118-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:105:13-107:29
+119                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+119-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:106:17-78
+119-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:106:25-75
+120            </intent-filter>
+121        </service>
+122
+123        <receiver
+123-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:110:9-128:20
+124            android:name="com.exflyer.oddiad.receiver.BootCompletedReceiver"
+124-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:111:13-77
+125            android:directBootAware="true"
+125-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:112:13-43
+126            android:enabled="true"
+126-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:113:13-35
+127            android:exported="true"
+127-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:114:13-36
+128            android:process=":remote" >
+128-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:115:13-38
+129            <intent-filter>
+129-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:116:13-127:29
+130                <category android:name="android.intent.category.DEFAULT" />
+130-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:117:17-76
+130-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:117:27-73
+131
+132                <action android:name="android.intent.action.BOOT_COMPLETED" />
+132-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:119:17-79
+132-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:119:25-76
+133                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+133-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:120:17-86
+133-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:120:25-83
+134                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+134-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:121:17-82
+134-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:121:25-79
+135                <action android:name="com.google.android.apps.tv.customization.receivers.BootCompletedReceiver" />
+135-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:122:17-115
+135-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:122:25-112
+136
+137                <!-- For HTC devices -->
+138                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+138-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:125:17-82
+138-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:125:25-79
+139                <action android:name="android.intent.action.REBOOT" />
+139-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:126:17-71
+139-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:126:25-68
+140            </intent-filter>
+141        </receiver>
+142        <receiver
+142-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:130:9-138:20
+143            android:name="com.exflyer.oddiad.receiver.AlarmReceiver"
+143-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:131:13-69
+144            android:enabled="true"
+144-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:132:13-35
+145            android:exported="true"
+145-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:133:13-36
+146            android:process=":remote" >
+146-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:134:13-38
+147            <intent-filter>
+147-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:135:13-137:29
+148                <action android:name="android.intent.action.ad.alarm" />
+148-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:136:17-73
+148-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:136:25-70
+149            </intent-filter>
+150        </receiver>
+151        <receiver
+151-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:140:9-148:20
+152            android:name="com.exflyer.oddiad.receiver.TimeChangedReceiver"
+152-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:141:13-75
+153            android:enabled="true"
+153-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:142:13-35
+154            android:exported="true"
+154-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:143:13-36
+155            android:process=":remote" >
+155-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:144:13-38
+156            <intent-filter>
+156-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:145:13-147:29
+157                <action android:name="android.intent.action.TIME_SET" />
+157-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:146:17-73
+157-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:146:25-70
+158            </intent-filter>
+159        </receiver>
+160
+161        <provider
+162            android:name="androidx.core.content.FileProvider"
+162-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:151:13-62
+163            android:authorities="com.exflyer.oddiad.fileprovider"
+163-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:152:13-64
+164            android:exported="false"
+164-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:153:13-37
+165            android:grantUriPermissions="true" >
+165-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:154:13-47
+166            <meta-data
+166-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:155:13-157:53
+167                android:name="android.support.FILE_PROVIDER_PATHS"
+167-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:156:17-67
+168                android:resource="@xml/filepaths" />
+168-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:157:17-50
+169        </provider>
+170
+171        <receiver
+171-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+172            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+172-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+173            android:exported="true"
+173-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+174            android:permission="com.google.android.c2dm.permission.SEND" >
+174-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+175            <intent-filter>
+175-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+176                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+176-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:17-81
+176-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:33:25-78
+177            </intent-filter>
+178        </receiver>
+179        <!--
+180             FirebaseMessagingService performs security checks at runtime,
+181             but set to not exported to explicitly avoid allowing another app to call it.
+182        -->
+183        <service
+183-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+184            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+184-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+185            android:directBootAware="true"
+185-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+186            android:exported="false" >
+186-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+187            <intent-filter android:priority="-500" >
+187-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:105:13-107:29
+188                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+188-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:106:17-78
+188-->D:\Projects Repo\android-oddiad\nextnowad\app\src\main\AndroidManifest.xml:106:25-75
+189            </intent-filter>
+190        </service>
+191        <service
+191-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+192            android:name="com.google.firebase.components.ComponentDiscoveryService"
+192-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:50:13-84
+193            android:directBootAware="true"
+193-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+194            android:exported="false" >
+194-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+195            <meta-data
+195-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+196                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+196-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+197                android:value="com.google.firebase.components.ComponentRegistrar" />
+197-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\3de0f9f7d7bdc12de77dcabeeb8e5975\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+198            <meta-data
+198-->[com.google.firebase:firebase-crashlytics:18.2.0] C:\Users\webzzang\.gradle\caches\transforms-3\d161852de01d8710095337453202610d\transformed\jetified-firebase-crashlytics-18.2.0\AndroidManifest.xml:18:13-20:85
+199                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+199-->[com.google.firebase:firebase-crashlytics:18.2.0] C:\Users\webzzang\.gradle\caches\transforms-3\d161852de01d8710095337453202610d\transformed\jetified-firebase-crashlytics-18.2.0\AndroidManifest.xml:19:17-115
+200                android:value="com.google.firebase.components.ComponentRegistrar" />
+200-->[com.google.firebase:firebase-crashlytics:18.2.0] C:\Users\webzzang\.gradle\caches\transforms-3\d161852de01d8710095337453202610d\transformed\jetified-firebase-crashlytics-18.2.0\AndroidManifest.xml:20:17-82
+201            <meta-data
+201-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\748c62e7d343ad8dcb5e5af10d4f6911\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+202                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+202-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\748c62e7d343ad8dcb5e5af10d4f6911\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+203                android:value="com.google.firebase.components.ComponentRegistrar" />
+203-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\748c62e7d343ad8dcb5e5af10d4f6911\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+204            <meta-data
+204-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\d7e383848d255e00d11b0d04950bf547\transformed\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:30:13-32:85
+205                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+205-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\d7e383848d255e00d11b0d04950bf547\transformed\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:31:17-139
+206                android:value="com.google.firebase.components.ComponentRegistrar" />
+206-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\d7e383848d255e00d11b0d04950bf547\transformed\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:32:17-82
+207            <meta-data
+207-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\293ed9fc17c7fc8c388c0346bf6d57d8\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+208                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+208-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\293ed9fc17c7fc8c388c0346bf6d57d8\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+209                android:value="com.google.firebase.components.ComponentRegistrar" />
+209-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\293ed9fc17c7fc8c388c0346bf6d57d8\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+210        </service>
+211
+212        <receiver
+212-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:29:9-33:20
+213            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+213-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:30:13-85
+214            android:enabled="true"
+214-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:31:13-35
+215            android:exported="false" >
+215-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:32:13-37
+216        </receiver>
+217
+218        <service
+218-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:35:9-38:40
+219            android:name="com.google.android.gms.measurement.AppMeasurementService"
+219-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:36:13-84
+220            android:enabled="true"
+220-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:37:13-35
+221            android:exported="false" />
+221-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:38:13-37
+222        <service
+222-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:39:9-43:72
+223            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+223-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:40:13-87
+224            android:enabled="true"
+224-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:41:13-35
+225            android:exported="false"
+225-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:42:13-37
+226            android:permission="android.permission.BIND_JOB_SERVICE" />
+226-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b84242bfdaa395a401f4893c29ee9c6d\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:43:13-69
+227
+228        <provider
+228-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+229            android:name="com.google.firebase.provider.FirebaseInitProvider"
+229-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+230            android:authorities="com.exflyer.oddiad.firebaseinitprovider"
+230-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+231            android:directBootAware="true"
+231-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+232            android:exported="false"
+232-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+233            android:initOrder="100" />
+233-->[com.google.firebase:firebase-common:20.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a275411d574fa592ce45e655eb5d82de\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+234
+235        <meta-data
+235-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b6fdc5c83fd354755f054630a4995ba5\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+236            android:name="com.google.android.gms.version"
+236-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b6fdc5c83fd354755f054630a4995ba5\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+237            android:value="@integer/google_play_services_version" />
+237-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\b6fdc5c83fd354755f054630a4995ba5\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+238
+239        <service
+239-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\7b7a8cfe78880b81b167e8384a85c33a\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+240            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+240-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\7b7a8cfe78880b81b167e8384a85c33a\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+241            android:exported="false" >
+241-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\7b7a8cfe78880b81b167e8384a85c33a\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+242            <meta-data
+242-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\7b7a8cfe78880b81b167e8384a85c33a\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+243                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+243-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\7b7a8cfe78880b81b167e8384a85c33a\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+244                android:value="cct" />
+244-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\7b7a8cfe78880b81b167e8384a85c33a\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+245        </service>
+246        <service
+246-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+247            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+247-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+248            android:exported="false"
+248-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+249            android:permission="android.permission.BIND_JOB_SERVICE" >
+249-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+250        </service>
+251
+252        <receiver
+252-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+253            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+253-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+254            android:exported="false" />
+254-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\webzzang\.gradle\caches\transforms-3\a3b2ea2d71c25f48859279c99105cc67\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+255    </application>
+256
+257</manifest>

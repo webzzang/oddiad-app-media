@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">241357002882-flstmmfd8av9uc0npgrt84dtbfgf15ic.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">241357002882</string>
+    <string name="google_api_key" translatable="false">AIzaSyA0as1J4IaxAHeDIGp0BKMlEvdTuwLNCvU</string>
+    <string name="google_app_id" translatable="false">1:241357002882:android:4c812260e312a5c04d3c9b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA0as1J4IaxAHeDIGp0BKMlEvdTuwLNCvU</string>
+    <string name="google_storage_bucket" translatable="false">oddiad-50fce.appspot.com</string>
+    <string name="project_id" translatable="false">oddiad-50fce</string>
+</resources>

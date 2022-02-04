@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241357002882",
+    "project_id": "oddiad-50fce",
+    "storage_bucket": "oddiad-50fce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241357002882:android:4c812260e312a5c04d3c9b",
+        "android_client_info": {
+          "package_name": "com.exflyer.oddiad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241357002882-flstmmfd8av9uc0npgrt84dtbfgf15ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0as1J4IaxAHeDIGp0BKMlEvdTuwLNCvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241357002882-flstmmfd8av9uc0npgrt84dtbfgf15ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_232323">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ad_zone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottom_zone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/right_zone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/main_player_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/sub_player_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_ad_zone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/main_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/right_zone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/color_232323"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/bottom_zone"
+            app:layout_constraintLeft_toRightOf="@id/ad_zone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2">
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/weather_ad_zone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/color_232323"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/weather_location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:textColor="@color/color_a5a4a4"
+                    android:textSize="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/weather_location_text" />
+
+                <TextView
+                    android:id="@+id/weather_text_temp_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:textColor="@color/color_eeeeee"
+                    android:textSize="24dp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/weather_text_temp_unit"
+                    app:layout_constraintTop_toBottomOf="@id/weather_icon" />
+
+                <ImageView
+                    android:id="@+id/weather_text_temp_icon"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/temp_dot_ring"
+                    app:layout_constraintLeft_toRightOf="@id/weather_text_temp_now"
+                    app:layout_constraintTop_toTopOf="@id/weather_text_temp_now" />
+
+                <TextView
+                    android:id="@+id/weather_text_temp_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="C"
+                    android:textColor="@color/color_eeeeee"
+                    android:textSize="24dp"
+                    app:layout_constraintLeft_toRightOf="@id/weather_text_temp_now"
+                    app:layout_constraintRight_toLeftOf="@id/weather_div_line"
+                    app:layout_constraintTop_toTopOf="@id/weather_text_temp_now" />
+
+                <View
+                    android:id="@+id/weather_div_line"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/color_474747"
+                    app:layout_constraintBottom_toBottomOf="@id/weather_text_temp_unit"
+                    app:layout_constraintLeft_toRightOf="@id/weather_text_temp_unit"
+                    app:layout_constraintRight_toLeftOf="@id/weather_text_view"
+                    app:layout_constraintTop_toTopOf="@id/weather_text_temp_unit" />
+
+                <TextView
+                    android:id="@+id/weather_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:textColor="@color/color_eeeeee"
+                    android:textSize="24dp"
+                    app:layout_constraintLeft_toRightOf="@id/weather_div_line"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/weather_icon" />
+
+                <TextView
+                    android:id="@+id/weather_temp_max_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:textColor="@color/color_eeeeee"
+                    android:textSize="15dp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/weather_temp_low_level"
+                    app:layout_constraintTop_toBottomOf="@id/weather_text_temp_now" />
+
+                <ImageView
+                    android:id="@+id/weather_temp_max_level_icon"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/temp_dot_ring"
+                    app:layout_constraintLeft_toRightOf="@id/weather_temp_max_level"
+                    app:layout_constraintTop_toTopOf="@id/weather_temp_max_level" />
+
+                <TextView
+                    android:id="@+id/weather_temp_low_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:textColor="@color/color_eeeeee"
+                    android:textSize="15dp"
+                    app:layout_constraintLeft_toRightOf="@id/weather_temp_max_level"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/weather_text_temp_now" />
+
+                <ImageView
+                    android:id="@+id/weather_temp_low_level_icon"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/temp_dot_ring"
+                    app:layout_constraintLeft_toRightOf="@id/weather_temp_low_level"
+                    app:layout_constraintTop_toTopOf="@id/weather_temp_low_level" />
+
+
+                <LinearLayout
+                    android:id="@+id/weather_dust_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/weather_temp_max_level">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanskr_regular"
+                        android:text="미세먼지"
+                        android:textColor="@color/color_a5a4a4"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/weather_fine_dust_state_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/notosanskr_medium"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/weather_fine_dust_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/notosanskr_regular"
+                        android:textColor="@color/color_a5a4a4"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/weather_ultra_dust_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/weather_dust_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanskr_regular"
+                        android:text="초미세먼지"
+                        android:textColor="@color/color_a5a4a4"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/weather_ultra_fine_dust_state_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/notosanskr_medium"
+                        android:textColor="@color/color_11c44e"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/weather_ultra_fine_dust_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/notosanskr_regular"
+
+                        android:textColor="@color/color_a5a4a4"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <TextClock
+                    android:id="@+id/weather_time_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:format12Hour="aa h:mm"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color_eeeeee"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toTopOf="@id/weather_time_clock"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextClock
+                    android:id="@+id/weather_time_clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:format12Hour="yyyy년 MM월dd일 EE요일"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color_a5a4a4"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_zone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.2">
+
+            <ImageView
+                android:id="@+id/bottom_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@color/color_4DFFFFFF"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/device_id_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/loading_ad_zone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/color_232323"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ad_zone"
+            app:layout_constraintLeft_toLeftOf="@id/ad_zone"
+            app:layout_constraintRight_toRightOf="@id/ad_zone"
+            app:layout_constraintTop_toTopOf="@id/ad_zone">
+
+            <View
+                android:id="@+id/bi_view"
+                android:layout_width="165dp"
+                android:layout_height="33dp"
+                android:background="@drawable/img_bi_green"
+                app:layout_constraintBottom_toTopOf="@id/bi_pro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <ProgressBar
+                android:id="@+id/bi_pro"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="23dp"
+                android:background="@null"
+                android:max="100"
+                android:progress="16"
+                android:progressDrawable="@drawable/loading_progressbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bi_view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/error_zone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/color_232323"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ad_zone"
+            app:layout_constraintLeft_toLeftOf="@id/ad_zone"
+            app:layout_constraintRight_toRightOf="@id/ad_zone"
+            app:layout_constraintTop_toTopOf="@id/ad_zone">
+
+            <TextView
+                android:id="@+id/device_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:fontFamily="@font/notosanskr_medium"
+                android:gravity="center"
+                android:text="@string/error_message"
+                android:textColor="@color/color_eeeeee"
+                android:textSize="27dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bi_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/app_bi_text_1"
+                android:textColor="@color/color_818181"
+                android:textSize="30dp"
+                app:layout_constraintRight_toLeftOf="@id/bi_text_2"
+                app:layout_constraintTop_toTopOf="@id/bi_text_2" />
+
+            <TextView
+                android:id="@+id/bi_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/app_bi_text_2"
+                android:textColor="@color/color_818181"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

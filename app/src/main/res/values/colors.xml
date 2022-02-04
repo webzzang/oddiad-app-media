@@ -1,0 +1,148 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#1E2225</color>
+    <color name="colorPrimaryDark">#1E2225</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="color_disable">#C6C6C6</color>
+    <color name="color_disable_text_color">#E8E8E8</color>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="color_CC222222">#CC222222</color>
+
+    <color name="color_DDFFFFFF">#DDFFFFFF</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_00C0AA">#00C0AA</color>
+    <color name="color_F8485E">#F8485E</color>
+    <color name="color_D22630">#D22630</color>
+    <color name="color_4DFFFFFF">#4DFFFFFF</color>
+    <color name="color_FF0000">#FF0000</color>
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_8A000000">#8A000000</color>
+    <color name="color_DE000000">#DE000000</color>
+    <color name="color_DE4E4E4E">#DE4E4E4E</color>
+    <color name="color_DE505050">#DE505050</color>
+    <color name="color_F4F4F4">#F4F4F4</color>
+    <color name="color_80FFFFFF">#80FFFFFF</color>
+    <color name="color_2BB7B3">#2BB7B3</color>
+    <color name="color_A7E6D7">#A7E6D7</color>
+    <color name="color_009591">#009591</color>
+    <color name="color_BABABA">#BABABA</color>
+    <color name="color_61000000">#61000000</color>
+    <color name="color_73000000">#73000000</color>
+    <color name="color_B3747474">#B3747474</color>
+    <color name="color_747474">#747474</color>
+    <color name="color_D9D9D9">#D9D9D9</color>
+    <color name="color_66000000">#66000000</color>
+    <color name="color_CC000000">#CC000000</color>
+    <color name="color_94D1CA">#94D1CA</color>
+    <color name="color_E3E3E3">#E3E3E3</color>
+    <color name="color_9A9A9A">#9A9A9A</color>
+    <color name="color_80000000">#80000000</color>
+    <color name="color_505050">#505050</color>
+    <color name="color_FAF8F8">#FAF8F8</color>
+
+    <color name="color_E2E2E2">#E2E2E2</color>
+    <color name="color_C1C1C1">#C1C1C1</color>
+    <color name="color_A6000000">#A6000000</color>
+    <color name="color_3C3C3C">#3C3C3C</color>
+    <color name="color_707070">#707070</color>
+    <color name="color_FFB762">#FFB762</color>
+    <color name="color_1D2222">#1D2222</color>
+    <color name="color_AFAFAF">#AFAFAF</color>
+    <color name="color_171919">#171919</color>
+    <color name="color_5D5D5D">#5D5D5D</color>
+    <color name="color_B8CECD">#B8CECD</color>
+    <color name="color_FAFAFA">#FAFAFA</color>
+    <color name="color_ED1941">#ED1941</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_F0F7F5">#F0F7F5</color>
+    <color name="color_F84852">#F84852</color>
+    <color name="color_3699EF">#3699EF</color>
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="color_4097E2">#4097E2</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_212121">#212121</color>
+    <color name="color_1F2225">#1F2225</color>
+
+    <color name="color_A1A3A3">#A1A3A3</color>
+    <color name="color_1F000000">#1F000000</color>
+    <color name="color_DD000000">#DD000000</color>
+    <color name="color_C7C7C7">#C7C7C7</color>
+    <color name="color_FFFFFFDD">#C7C7C7</color>
+
+    <color name="text_color_FF000000">#FF000000</color>
+    <color name="text_color_D9000000">#D9000000</color>
+    <color name="text_color_75000000">#75000000</color>
+    <color name="text_color_00000000">#00000000</color>
+
+
+    <drawable name="color_transparent">@color/color_transparent</drawable>
+    <drawable name="color_2BB7B3">@color/color_2BB7B3</drawable>
+    <color name="color_B3000000">#B3000000</color>
+
+
+    <color name="color_17181A">#17181A</color>
+    <color name="color_1E2225">#1E2225</color>
+
+    <color name="color_4D000000">#4D000000</color>
+
+    <color name="opacity">#4DEBEBEB</color>
+    <color name="light_gray">#EBEBEB</color>
+    <color name="blur_gray">#2d000000</color>
+    <color name="blur_gray_auth">#06000000</color>
+    <color name="faceRect">#FFFFFF</color>
+    <color name="playbt">#6B0E90</color>
+
+    <color name="black_theme_base_bg">#1E2225</color>
+    <color name="white_theme_base_bg">#FFFFFF</color>
+    <color name="permission_base_bg">#f6f7f8</color>
+    <color name="base_bg">#f6f7f8</color>
+    <color name="color_6b0e90">#6b0e90</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_4DEBEBEB">#4DEBEBEB</color>
+    <color name="color_4f066c">#4f066c</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="color_F6F7F8">#f6f7f8</color>
+    <color name="color_ebebeb">#ebebeb</color>
+
+    <color name="colorScreenBackground">#F0F0F0</color>
+    <color name="colorTexts">#231F20</color>
+    <color name="colorWarningTitle">#D84242</color>
+
+    <color name="color_00264A">#00264A </color>
+    <color name="color_F2F2F2">#F2F2F2 </color>
+    <color name="color_232323">#232323 </color>
+    <color name="color_2fcd7c">#2fcd7c </color>
+    <color name="color_818181">#818181 </color>
+    <color name="color_3b3b3b">#3b3b3b </color>
+    <color name="color_eeeeee">#eeeeee </color>
+    <color name="color_a5a4a4">#a5a4a4 </color>
+    <color name="color_474747">#474747 </color>
+    <color name="color_459dff">#459dff </color>
+    <color name="color_11c44e">#11c44e </color>
+    <color name="color_ff8208">#ff8208 </color>
+    <color name="color_ff0808">#ff0808 </color>
+
+    <color name="primary">#2fcd9b </color>
+
+
+</resources>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Projects Repo\\android-oddiad\\nextnowad\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "D:\\Projects Repo\\android-oddiad\\nextnowad\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\Projects Repo\\android-oddiad\\nextnowad\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\Projects Repo\\android-oddiad\\nextnowad\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

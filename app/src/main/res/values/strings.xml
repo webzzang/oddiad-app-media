@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">오디AD 플레이어</string>
+
+    <string name="app_bi_text_1">Oddi</string>
+    <string name="app_bi_text_2">AD</string>
+    <string name="user_rooting_use_kill_app">앱 정보보호 정책에 위반되어\n오디AD 플레이어 서비스 사용이 제한됩니다.</string>
+    <string name="finish_use_kill_app">‘뒤로’버튼을 한번 더 누르시면 종료됩니다.</string>
+
+    <string name="device_create_site">오디AD 시스템에 위 코드를 등록해주세요.</string>
+
+    <string name="weather_temp_max_level_text">최고  %s</string>
+    <string name="weather_temp_low_level_text">최저  %s</string>
+    <string name="weather_precipitation_text">강수확률 :  %s%%</string>
+    <string name="weather_humidity_text">습도 :  %s%%</string>
+    <string name="weather_wind_speed_text">풍속 : %sm/s</string>
+    <string name="weather_fine_dust_text">(%s μg/m3)</string>
+
+    <string name="error_message">서버에 접속할 수 없습니다.\n네트워크 연결을 확인하시고 앱을 종료 후 다시 실행해주세요.</string>
+</resources>
